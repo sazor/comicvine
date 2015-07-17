@@ -14,3 +14,6 @@ notifications:
   email:
     on_failure: change
     on_success: never
+
+env:
+  - secure: "mDMKUox/8+VfWJ1uUo81DvfYhq3jQXtn9LDbslKbu9vXwyfI2xXmB9nXTI/b00l3jSjcYlbyyUkgtPbNF7S8fZ175Pd5IiSqWfC1FGXwF+LrdOcOJJJUjTDE5EwbeR+xUwRVgSPnP20JqBOCTHBlbO+H7kmBebeH+0FxvuapcWlt+CJ8onP/52ND8oYGpSvToopn7sM+wkOqsvFisQ3nkQu/v2G4Cbu/KHHzyd/UueIBFUs1cagltC1+ArRBcY3gQLYseK33/98aKIDsB/GUaIjwOiBHKWBfKyysGKuGfN+GjIw4AMKNxiMj103PH7BRQNtJY8mFvrPSp+Idbg1QfcpZRoRbSZBR4kXT1qpRQEJD5jt0/tZ5Te1UimLmW9229dHbgrsyonDeb8EKqCdOjs2+NPl5wT9jsG2ga6ak/pIvn2/8VwD4ok1fSWJIh4aAjlqw8Yq+eKe9ZKroiFlQ3dWqsZyNB1YMXFpJxLwvP3SG5YGqypGFYAZb4gUAKaJBXPU4dPg35qIMELKM4+QWaipvpeUcqskZt+EOdTHLZcGioWP644N+ksivx8D9sxAfN6+IErOOo4h3Qo9wUps/UHQ1bQhJIokWSYmiEQ+fRQkYu5FwaqOnBUR+WKFSc+SNaNFtYWNzlFOIUIZvxynUDcm7kYN7C78G2k94pY8NNoA="
