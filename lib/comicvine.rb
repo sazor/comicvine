@@ -1,15 +1,19 @@
+require "httparty"
+require "pry"
 require "comicvine/version"
+require "comicvine/utils"
+require "comicvine/character"
 
 module Comicvine
-  @api_key = ENV["COMICVINE_API_KEY"] # default value
+  module API
+    @key = ENV["COMICVINE_API_KEY"] # default value
 
-  class << self
-    def api_key
-      @api_key
-    end
+    BASE_URL = "http://beta.comicvine.com/api"
+    FORMAT = "json"
+    QUERY = { api_key: @key, format: FORMAT }
 
-    def api_key=(value)
-      @api_key = value unless value.nil? || value.empty?
+    class << self
+      attr_accessor :key
     end
   end
 end

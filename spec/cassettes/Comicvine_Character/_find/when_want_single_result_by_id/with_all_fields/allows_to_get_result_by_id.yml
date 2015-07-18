@@ -1,0 +1,513 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://beta.comicvine.com/api/characters?api_key=6c715eb061943d6fe1a252ed49eef9b2139f3a2f&filter=id:1254&format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Server:
+      - nginx/1.2.0
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/5.4.17
+      Cache-Control:
+      - no-cache
+      Date:
+      - Sat, 18 Jul 2015 19:33:07 GMT
+      Location:
+      - http://beta.comicvine.com/api/characters/?api_key=6c715eb061943d6fe1a252ed49eef9b2139f3a2f&filter=id%3A1254&format=json
+      Set-Cookie:
+      - device_view=full; expires=Tue, 18-Aug-2015 07:00:00 GMT; path=/; httponly
+    body:
+      encoding: UTF-8
+      string: |-
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="UTF-8" />
+                <meta http-equiv="refresh" content="1;url=http://beta.comicvine.com/api/characters/?api_key=6c715eb061943d6fe1a252ed49eef9b2139f3a2f&amp;filter=id%3A1254&amp;format=json" />
+
+                <title>Redirecting to http://beta.comicvine.com/api/characters/?api_key=6c715eb061943d6fe1a252ed49eef9b2139f3a2f&amp;filter=id%3A1254&amp;format=json</title>
+            </head>
+            <body>
+                Redirecting to <a href="http://beta.comicvine.com/api/characters/?api_key=6c715eb061943d6fe1a252ed49eef9b2139f3a2f&amp;filter=id%3A1254&amp;format=json">http://beta.comicvine.com/api/characters/?api_key=6c715eb061943d6fe1a252ed49eef9b2139f3a2f&amp;filter=id%3A1254&amp;format=json</a>.
+            </body>
+        </html>
+    http_version: 
+  recorded_at: Sat, 18 Jul 2015 19:33:07 GMT
+- request:
+    method: get
+    uri: http://beta.comicvine.com/api/characters/?api_key=6c715eb061943d6fe1a252ed49eef9b2139f3a2f&filter=id:1254&format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - device_view=full
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.0
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.4.17
+      Cache-Control:
+      - no-cache
+      Date:
+      - Sat, 18 Jul 2015 19:33:08 GMT
+      X-Phoenix-Cache-Expires:
+      - 07-18-2015 12:38:08
+      X-Phoenix-Cached:
+      - 'false'
+    body:
+      encoding: UTF-8
+      string: '{"error":"OK","limit":100,"offset":0,"number_of_page_results":1,"number_of_total_results":1,"status_code":1,"results":[{"aliases":"Nura
+        Nal\nDreamy\nDreamer\nMiss Terious\nNura Nal-Dox\nNura Schappin\nHigh Seer
+        of Naltor","api_detail_url":"http:\/\/beta.comicvine.com\/api\/character\/4005-1254\/","birth":null,"count_of_issue_appearances":356,"date_added":"2008-06-06
+        11:27:38","date_last_updated":"2015-05-04 19:13:13","deck":"Nura Nal is from
+        the planet Naltor, where all of the inhabitants have the ability to see into
+        the future, though Nura''s precognitive ability is the strongest of her race.
+        As Dream Girl, she is a longtime member of the Legion of Super-Heroes.","description":"<h2>Origin<\/h2><figure
+        data-align=\"right\" data-img-src=\"http:\/\/static.comicvine.com\/uploads\/original\/0\/3664\/197563-87187-dream-girl.jpg\"
+        data-ref-id=\"1300-197563\" data-size=\"small\" style=\"width: 279px\" data-ratio=\"2.3655913978495\"
+        data-width=\"279\" data-resize-url=\"\" data-resized=\"\" data-embed-type=\"image\"><a
+        class=\"fluid-height\" style=\"padding-bottom:236.6%\" href=\"http:\/\/static.comicvine.com\/uploads\/original\/0\/3664\/197563-87187-dream-girl.jpg\"
+        data-ref-id=\"1300-197563\"><img src=\"http:\/\/static.comicvine.com\/uploads\/scale_small\/0\/3664\/197563-87187-dream-girl.jpg\"><\/a><figcaption>Dream
+        Girl (original costume)  <\/figcaption><\/figure><p style=\"\">Nura Nal was
+        born on <a href=\"..\/..\/naltor\/34-54952\/\" rel=\"nofollow\">Naltor<\/a>
+        in the thirtieth century. Naltor''s native denizens are genetically inclined
+        to be precognitives, with the ability to see into the future. At a young age,
+        Nura became recognized as the most powerful precog among her people, more
+        able to dream with peculiar accuracy, or see a few moments into the future
+        while awake, than any other. Nura''s exceptional beauty often hid the fact
+        that she was also exceptionally bright, and once she reached adulthood, she
+        had already mastered advanced Naltorian science, putting her among the galaxy''s
+        intellectual elite. Nura eventually left Naltor to act on one her visions
+        in which she foresaw the death of several members of the <a href=\"\/legion-of-super-heroes\/4060-19241\/\"
+        data-ref-id=\"4060-19241\">Legion of Super-Heroes<\/a> on a mission in space.
+        Determined to prevent their deaths, she introduced herself to the Legion using
+        the code name of Dream Girl.<\/p><h2>Creation<\/h2><p style=\"\">Dream Girl
+        was created in 1964 by writer <a href=\"\/edmond-hamilton\/4040-42401\/\"
+        data-ref-id=\"4040-42401\">Edmond Hamilton<\/a> and artist <a href=\"\/john-forte\/4040-7532\/\"
+        data-ref-id=\"4040-7532\">John Forte<\/a>, first appearing in <a href=\"\/adventure-comics\/4050-3105\/\"
+        data-ref-id=\"4050-3105\">Adventure Comics<\/a> #310. She became the sixth
+        female member of the Legion of Super-Heroes and their 20th member overall.
+        As her code name would suggest, Dream Girl was portrayed as the most glamorous
+        member of the Legion, and she was envisioned as a <a href=\"..\/..\/marilyn-monroe\/29-16582\/\"
+        rel=\"nofollow\">Marilyn Monroe<\/a>-like beauty complete with platinum-blonde
+        hair, revealing silver costumes, high heels, and a star-shaped birthmark on
+        her right cheek. Despite her looks, Dream Girl was also conceived to be one
+        of the Legion''s most intelligent and capable members.<\/p><p style=\"\">
+        <\/p><h2>Character Evolution<\/h2><h3><b>Original Continuity: New Earth<\/b><\/h3><figure
+        data-ref-id=\"1300-1644352\" data-img-src=\"http:\/\/static.comicvine.com\/uploads\/original\/2\/29837\/1644352-dreamgirl_lightle.jpg\"
+        data-size=\"small\" data-align=\"right\" style=\"width: 320px\" data-ratio=\"1.4321705426357\"
+        data-width=\"320\" data-resize-url=\"\" data-resized=\"\" data-embed-type=\"image\"><a
+        class=\"fluid-height\" style=\"padding-bottom:143.2%\" href=\"http:\/\/static.comicvine.com\/uploads\/original\/2\/29837\/1644352-dreamgirl_lightle.jpg\"
+        data-ref-id=\"1300-1644352\"><img src=\"http:\/\/static.comicvine.com\/uploads\/scale_small\/2\/29837\/1644352-dreamgirl_lightle.jpg\"><\/a><figcaption>Dream
+        Girl (classic 70''s costume)<\/figcaption><\/figure><p style=\"\">Nura knew
+        from her vision that several of the Legionnaires would face death in an explosion
+        in space if they remained members of the team. At one of the Legion''s open
+        try-outs, Nura introduced herself as Dream Girl, gaining the attention of
+        the male Legionnaires and the ire of the female Legionnaires. One Legionnaire
+        fell in love with her at first sight, <a href=\"\/starman\/4005-1260\/\" data-ref-id=\"4005-1260\">Star
+        Boy<\/a>. The male Legionnaires voted her in to the team. Immediately, Dream
+        Girl studied the Legion Constitution, to discover ways to expel the doomed
+        Legionnaires from the team. One by one, she sabotaged them, including <a href=\"\/lightning-lass\/4005-30997\/\"
+        data-ref-id=\"4005-30997\">Lightning Lass<\/a>, who had her electrical powers
+        seemingly removed by Nura''s Naltorian science. The vision Nura had, turned
+        out to be a vision of a test the Legion was doing with crash test dummies
+        that looked like the Legionnaires. Dream Girl also revealed that Lightning
+        Lass'' powers had changed from electrical control to the nullification of
+        gravity.<\/p><p style=\"\">Once the truth of Dream Girl''s scheme came out,
+        the Legionnaires invited Dream Girl to stay on the team because she had their
+        best interests in mind. Dream Girl declined the invitation, deciding instead
+        to get more training in her abilities. Dream Girl joined the <a href=\"\/legion-of-substitute-heroes\/4060-47111\/\"
+        data-ref-id=\"4060-47111\">Legion of Substitute Heroes<\/a> so she would have
+        time to practice and perfect her visions. Later, after Star Boy lost his kryptonian-level
+        powers, and followed her to the Substitute Legion and started their romance.
+        Finally, when it appeared that <a href=\"\/supergirl\/4005-2351\/\" data-ref-id=\"4005-2351\">Supergirl<\/a>
+        and <a href=\"\/superman\/4005-1807\/\" data-ref-id=\"4005-1807\">Superboy<\/a>
+        were leaving the Legion of Super-Heroes, Star Boy and Dream Girl rejoined
+        the team.<\/p><p style=\"\">With her stunning pinup-girl looks and figure,
+        a flirty swimsuit-like costume (which she wore even prior to the Legion''s
+        sexy-costume era of the 70''s), and boldly confident personality, the male
+        Legionnaires completely stopped noticing the other female members on the team,
+        and the female Legionnaires soon grew jealous and resentful. Never one to
+        back down from a challenge, Dream Girl made an effort to reach out to her
+        female teammates, gradually winning them over and befriending them with her
+        natural charm and charisma.<\/p><p style=\"\"> <\/p><h3>Reboot: Earth-247<\/h3><figure
+        data-ref-id=\"1300-1982181\" data-img-src=\"http:\/\/static.comicvine.com\/uploads\/original\/8\/83063\/1982181-dreamy15.jpg\"
+        data-size=\"small\" data-align=\"right\" style=\"width: 320px\" data-ratio=\"2.6036585365854\"
+        data-width=\"320\" data-resize-url=\"\" data-resized=\"\" data-embed-type=\"image\"><a
+        class=\"fluid-height\" style=\"padding-bottom:260.4%\" href=\"http:\/\/static.comicvine.com\/uploads\/original\/8\/83063\/1982181-dreamy15.jpg\"
+        data-ref-id=\"1300-1982181\"><img class=\"js-lazy-load-image\" data-src=\"http:\/\/static.comicvine.com\/uploads\/scale_small\/8\/83063\/1982181-dreamy15.jpg\"
+        src=\"data:image\/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==\"><noscript><img
+        src=\"http:\/\/static.comicvine.com\/uploads\/scale_small\/8\/83063\/1982181-dreamy15.jpg\"><\/noscript><\/a><figcaption>Dream
+        Girl (Earth-247)<\/figcaption><\/figure><p style=\"\">Nura claimed that her
+        name was Nura Schappin, changing her surname to Nal because, as she put it,
+        \"It just says I''m from Naltor y''know.\" She also claimed to have been the
+        first precognitive to be born on Naltor in seven generations, a claim that
+        was later contradicted by other post-<i>Zero Hour<\/i> Legion stories. For
+        most of this continuity''s duration, Nura was not a Legionnaire, although
+        she was still Star Boy''s girlfriend. Additionally, she suffered from narcolepsy,
+        falling unconscious whenever she had a vision. She was no longer the sister
+        of <a href=\"\/black-witch\/4005-30998\/\" data-ref-id=\"4005-30998\">Mysa<\/a>,
+        who was completely unrelated to her in this continuity. Eventually, Nura gained
+        Legion membership under the codename Dreamer. Unlike other continuities her
+        Legion costume featured a cape, as well as a diamond-shaped \"cleavage window\"
+        in the front.<\/p><h3>Threeboot: Earth-Prime<\/h3><figure data-ref-id=\"1300-1534216\"
+        data-img-src=\"http:\/\/static.comicvine.com\/uploads\/original\/2\/29837\/1534216-dreamgirl_3boot.jpg\"
+        data-size=\"small\" data-align=\"right\" style=\"width: 320px\" data-ratio=\"2.141975308642\"
+        data-width=\"320\" data-resize-url=\"\" data-resized=\"\" data-embed-type=\"image\"><a
+        class=\"fluid-height\" style=\"padding-bottom:214.2%\" href=\"http:\/\/static.comicvine.com\/uploads\/original\/2\/29837\/1534216-dreamgirl_3boot.jpg\"
+        data-ref-id=\"1300-1534216\"><img class=\"js-lazy-load-image\" data-src=\"http:\/\/static.comicvine.com\/uploads\/scale_small\/2\/29837\/1534216-dreamgirl_3boot.jpg\"
+        src=\"data:image\/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==\"><noscript><img
+        src=\"http:\/\/static.comicvine.com\/uploads\/scale_small\/2\/29837\/1534216-dreamgirl_3boot.jpg\"><\/noscript><\/a><figcaption>Dream
+        Girl (Earth-Prime)<\/figcaption><\/figure><p style=\"\">Dream Girl had a more
+        disconnected and \"spaced out\" personality in this continuity, since her
+        precognition often interfered with her perception of current reality and she
+        had trouble differentiating between the two. She wore a midriff-baring costume
+        with a silver top and black leggings. In her first action as a Legionnaire
+        she stopped an assassination attempt on the United Planets delegates by a
+        spy. <a href=\"..\/..\/brainiac-5\/29-1255\/\" rel=\"nofollow\">Brainiac 5<\/a>
+        had compiled data for three days and sent Dream Girl, <a href=\"..\/..\/karate-kid\/29-1269\/\"
+        rel=\"nofollow\">Karate Kid<\/a>, and <a href=\"..\/..\/element-lad\/29-1263\/\"
+        rel=\"nofollow\">Element Lad<\/a> to stop the assassin. The Legionnaires looked
+        like they were beaten, until Karate Kid woke Dream Girl from a daydream and
+        she took down the assassin down with ease, saying that she thought they had
+        already defeated him. Afterwards, Brainiac 5 announced that Dream Girl''s
+        precog power frustrated him to no end because there was no rationality to
+        it and it was not scientific. Dream Girl then interrupted Brainy, talking
+        about a conversation they had not had yet, frustrating him even further. Later,
+        Dream Girl, Karate Kid, <a href=\"..\/..\/shadow-lass\/29-1261\/\" rel=\"nofollow\">Shadow
+        Lass<\/a> and Brainiac 5 were all sent to Dream Girl''s home planet of Naltor
+        to investigate why no one under the age of 18 was able to sleep.<\/p><p style=\"\">Brainiac
+        5 eventually realized that he was in love with her, right before she was killed
+        in the battle that destroyed most of the Legion Headquarters. He stopped her
+        soul from escaping, and she went to live only in Brainiac''s mind while he
+        tried to figure out a way to restore her body.<\/p><p style=\"\"> <\/p><h3>Retroboot:
+        New Earth<\/h3><figure data-ref-id=\"1300-2120994\" data-img-src=\"http:\/\/static.comicvine.com\/uploads\/original\/9\/92932\/2120994-dg11.jpg\"
+        data-size=\"small\" data-align=\"right\" style=\"width: 278px\" data-ratio=\"1.1294964028777\"
+        data-width=\"278\" data-resize-url=\"\" data-resized=\"\" data-embed-type=\"image\"><a
+        class=\"fluid-height\" style=\"padding-bottom:112.9%\" href=\"http:\/\/static.comicvine.com\/uploads\/original\/9\/92932\/2120994-dg11.jpg\"
+        data-ref-id=\"1300-2120994\"><img class=\"js-lazy-load-image\" data-src=\"http:\/\/static.comicvine.com\/uploads\/scale_small\/9\/92932\/2120994-dg11.jpg\"
+        src=\"data:image\/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==\"><noscript><img
+        src=\"http:\/\/static.comicvine.com\/uploads\/scale_small\/9\/92932\/2120994-dg11.jpg\"><\/noscript><\/a><figcaption>Dream
+        Girl (current continuity)<\/figcaption><\/figure><p style=\"\">With the \"retroboot,\"
+        Dream Girl and the Legion returned to being very much like the original team
+        prior to the Five Year Gap, with a few differences. At the beginning of the
+        story arc several members of the Legion (including the original Dream Girl
+        in her classic silver costume) mysteriously appeared in the 21st century.
+        Other Legionnaires were scattered and trapped in different places throughout
+        the universe. Dream Girl was captured and imprisoned by the nightmarish villain
+        <a href=\"..\/..\/doctor-destiny\/29-10453\/\" rel=\"nofollow\">Dr. Destiny<\/a>
+        in <a href=\"..\/..\/arkham-asylum\/34-31682\/\" rel=\"nofollow\">Arkham Asylum<\/a>,
+        where her precognitive powers were manipulated into giving her horrific illusions.
+        She was rescued by the <a href=\"..\/..\/justice-society-of-america\/65-27589\/\"
+        rel=\"nofollow\">Justice Society<\/a> and <a href=\"\/justice-league-of-america\/4060-31815\/\"
+        data-ref-id=\"4060-31815\">Justice League<\/a>, and was reunited with her
+        longtime love Thom Kallor (formerly Star Boy), who had been flung back in
+        time to become the new <a href=\"..\/..\/starman\/29-7646\/\" rel=\"nofollow\">Starman<\/a>.
+        In this revised history the relationship between the two was more tragic,
+        since Starman suffered mental damage after being hurtled back through time
+        unprepared. She felt terribly for him and believed that the 21st-century methods
+        of treating his mental illness were barbaric. Dream Girl has since established
+        a connection to the realm of ''<a href=\"\/the-dreaming\/4020-55857\/\" data-ref-id=\"4020-55857\">The
+        Dreaming<\/a>,'' further enhancing her precognitive powers. She also correctly
+        predicted the threat of <a href=\"..\/..\/superman-prime\/29-40756\/\" rel=\"nofollow\">Superboy-Prime<\/a>
+        in <a href=\"..\/..\/final-crisis\/39-51642\/\" rel=\"nofollow\">Final Crisis<\/a>:
+        <a href=\"..\/..\/final-crisis-legion-of-three-worlds\/49-22674\/\" rel=\"nofollow\">Legion
+        of Three Worlds<\/a>, the recent storyline which united all three versions
+        of the Legion together. After the <a href=\"\/last-stand-of-new-krypton\/4045-56041\/\"
+        data-ref-id=\"4045-56041\">war<\/a> with <a href=\"\/new-krypton\/4020-56084\/\"
+        data-ref-id=\"4020-56084\">New Krypton<\/a> in the 21st century, Dream Girl
+        was able to bring Star Boy back home to the 31st century to get him the medical
+        treatment he needed.<\/p><p style=\"\"> <\/p><h2>Major Story Arcs<\/h2><h3><b>Original
+        Continuity: New Earth<\/b><\/h3><h4>Romance with Star Boy<\/h4><p style=\"\">Though
+        Nura continued to receive constant attention from the unattached male Legionnaires
+        (and even some of the attached ones), <a href=\"..\/..\/star-boy\/29-1260\/\"
+        rel=\"nofollow\">Star Boy<\/a> (Thom Kallor) was the one who eventually managed
+        to capture her heart. Nura became very close to him and she was romantically
+        involved with Star Boy for many years. Dream Girl spent several years as someone
+        who needed to be rescued, partly due to her effective but non-combative power.
+        Not wanting to be a liability she trained intensively in hand-to-hand combat
+        in order to better serve the team on the field. She was a quick study and
+        became a highly skilled martial artist, second on the team in unarmed combat
+        to only <a href=\"..\/..\/karate-kid\/29-1269\/\" rel=\"nofollow\">Karate
+        Kid.<\/a> Her precognitive power to foresee an opponent''s moves before they
+        even made them further enhanced her effectiveness as a fighter.<\/p><p style=\"\">
+        <\/p><h4>Leaving The Legion<\/h4><p style=\"\">At one point Nura took a temporary
+        leave from the team, since she believed she had initially joined under false
+        pretenses. She had foreseen the deaths of some Legionnaires while dreaming
+        and proceeded to get those Legionnaires expelled from the Legion in order
+        to save their lives. During this time she joined the <a href=\"..\/..\/legion-of-substitute-heroes\/65-47111\/\"
+        rel=\"nofollow\">Legion of Substitute Heroes<\/a> until she reunited with
+        Star Boy, who had been previously expelled from the Legion for accidentally
+        killing Nura''s former lover, a Naltorian named Kenz Nahor, in self-defense
+        after Nahor attempted to kill Star Boy out of jealousy.<\/p><p style=\"\">
+        <\/p><h4>Leader of the Legion<\/h4><p style=\"\">Dream Girl soon rejoined
+        the Legion and continued serving as a highly valued member. After <a href=\"..\/..\/lightning-lad\/29-1253\/\"
+        rel=\"nofollow\">Lightning Lad<\/a>''s term as Legion leader went horribly
+        awry, the team decided it was time to elect a new leader, and Dream Girl announced
+        that she was officially running for the position. The other candidates initially
+        scoffed at the idea of the Legion''s glamor girl winning the job, until they
+        realized to their dismay that she would not have announced her candidacy had
+        she not already foreseen herself winning. Sure enough, Dream Girl was elected
+        leader, becoming only the second female Legionnaire ever to do so (after <a
+        href=\"..\/..\/saturn-girl\/29-1273\/\" rel=\"nofollow\">Saturn Girl<\/a>).<\/p><p
+        style=\"\">Shortly after she assumed leadership the Legion was faced with
+        one of the most dire challenges in their history -- the <a href=\"..\/..\/great-darkness-saga\/39-40773\/\"
+        rel=\"nofollow\">Great Darkness Saga<\/a>. The ancient super-villain <a href=\"..\/..\/darkseid\/29-2349\/\"
+        rel=\"nofollow\">Darkseid<\/a> attempted to conquer the whole of the United
+        Planets. He very nearly succeeded, but the Legion, with Dream Girl''s able
+        leadership, finally managed to thwart him after an epic and costly struggle.
+        During this time Nura''s sister, Mysa Nal, arrived to aid the team with her
+        mastery of the magical arts. Afterwards Mysa became a Legionnaire, calling
+        herself the <a href=\"..\/..\/white-witch\/29-30998\/\" rel=\"nofollow\">White
+        Witch<\/a>.<\/p><p style=\"\">Though Dream Girl again ran for leader the following
+        term, she lost out to Element Lad. Star Boy made no effort to hide his satisfaction
+        about this result. During her stint as leader, their relationship had suffered.
+        After Star Boy left the team to become planetary champion of his home planet,
+        <a href=\"\/xanthu\/4020-56504\/\" data-ref-id=\"4020-56504\">Xanthu<\/a>.<\/p><p
+        style=\"\"> <\/p><h4>The Universo Project<\/h4><p style=\"\">Dream Girl became
+        one of the first Legion members to demonstrate sufficient willpower to utilize
+        her Legion Flight Ring on an object other than herself, effectively giving
+        her the ability of telekinesis. She later was one of four Legionnaires singled
+        out by <a href=\"\/universo\/4005-22717\/\" data-ref-id=\"4005-22717\">Universo<\/a>
+        as the most dangerous obstacles in his attempt to take over the Earth (along
+        with Saturn Girl, Brainiac 5, and Chameleon Boy). The four were captured and
+        held prisoner with their memories suppressed. Saturn Girl eventually regained
+        her memory and helped her teammates engineer an escape, after which they turned
+        the tables on Universo. It was assumed that they were isolated as the most
+        dangerous because they were the smartest Legionnaires, but it also could have
+        been that those four had the most resistance to Universo''s mind control --
+        even more than the Legion''s (then current) telepath, <a href=\"\/tellus\/4005-30996\/\"
+        data-ref-id=\"4005-30996\">Tellus<\/a>.<\/p><p style=\"\"> <\/p><h4>Mind-controlled
+        by Atmos<\/h4><p style=\"\">When the ruler of Xanthu (Star Boy''s home planet)
+        asked Thom to be their resident hero since their champion <a href=\"\/atmos\/4005-28222\/\"
+        data-ref-id=\"4005-28222\">Atmos<\/a> had gone missing, Star Boy reluctantly
+        had to take his leave from the Legion and Nura. While Star Boy was away, Atmos
+        turned up during a Legion mission and Nura inexplicably found herself intensely
+        attracted to him. To the surprise of her teammates, she broke up her long-distance
+        relationship with Star Boy and jumped into a romance with Atmos. The truth
+        later became apparent to her that Atmos was somehow using his mental powers
+        to take over her emotions and sap her will. Furious at being so manipulated,
+        she used her own formidable willpower to slowly build up a tolerance to Atmos''
+        mind-sapping powers. She kept this a secret from her erstwhile lover until
+        one night when Atmos had fallen asleep. She regained enough control over herself
+        to activate her Legion flight ring alarm and knocked Atmos out cold with one
+        punch the moment he woke up. Free of Atmos'' influence, Nura immediately went
+        back to her true love Thom.<\/p><p style=\"\"> <\/p><h4>Five Years Later<\/h4><figure
+        data-align=\"right\" data-img-src=\"http:\/\/static.comicvine.com\/uploads\/original\/8\/80419\/1888499-dg30.jpg\"
+        data-ref-id=\"1300-1888499\" data-size=\"small\" style=\"width: 103px\" data-ratio=\"2.3495145631068\"
+        data-width=\"103\" data-resize-url=\"\" data-resized=\"\" data-embed-type=\"image\"><a
+        class=\"fluid-height\" style=\"padding-bottom:235.0%\" href=\"http:\/\/static.comicvine.com\/uploads\/original\/8\/80419\/1888499-dg30.jpg\"
+        data-ref-id=\"1300-1888499\"><img class=\"js-lazy-load-image\" data-src=\"http:\/\/static.comicvine.com\/uploads\/scale_small\/8\/80419\/1888499-dg30.jpg\"
+        src=\"data:image\/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==\"><noscript><img
+        src=\"http:\/\/static.comicvine.com\/uploads\/scale_small\/8\/80419\/1888499-dg30.jpg\"><\/noscript><\/a><figcaption>High
+        Seer (Five Years Later)<\/figcaption><\/figure><p style=\"\">After the devastation
+        of the <a href=\"\/the-magic-wars\/4045-56080\/\" data-ref-id=\"4045-56080\">Magic
+        Wars<\/a>, Legion continuity was re-started after the period known as the
+        Five Year Gap. The galactic economy had collapsed and Earth''s government
+        became very hostile towards the Legion. Nura left the team and made her return
+        to Naltor to become its High Seer. She steered Naltor successfully through
+        the troubled times, and under her leadership her world became one of the most
+        stable economies in the United Planets. But Nura felt alone and missed Star
+        Boy terribly, so she went through a series of relationships with several men
+        during this time. In early 2996, after a flash of light that seemed to indicate
+        some sort of time flux, Dream Girl joined her former teammates on Earth, and
+        just before the destruction of the time line, she shared a kiss with her old
+        flame Star Boy before they were wiped out of existence due to the <a href=\"..\/..\/zero-hour\/39-40782\/\"
+        rel=\"nofollow\">Zero Hour<\/a> event.<\/p><p style=\"\"> <\/p><h3>Threeboot:
+        Earth-Prime<\/h3><h4>Guiding the Legion<\/h4><p style=\"\">On Naltor, the
+        Legionnaires brought a crazed teen before the high council and Dream Girl
+        demanded to know what was being done to fix the problem. She also explained
+        that without dreams, Naltorians could not interpret their visions and would
+        eventually lose their precognitive abilities. The high council of Nltro claimed
+        that the lack of sleep was a disease and not to worry, since it would work
+        itself out. After it was discovered that it was actually the adults committing
+        the crime against the children, Brainiac 5 took off, leaving the other three
+        Legionnaires to fight the Precommandos (Precog Cops). The cops lay a beating
+        on Karate Kid and Shadow Lass, until Dream Girl distracted the police so that
+        they focused their attention solely on her. Taking advantage of the distraction,
+        her teammates took the cops down. Dream Girl knew that more precogs were on
+        the way, but she also knew that there was something the high council did not
+        want the kids to see. She tried to get Karate Kid to knock her out but he
+        refused, so Shadow Lass blindsided her with a mean right hand. Dream Girl
+        then viewed the Destruction of the Universe by an unknown enemy and his army.
+        When she woke up she said one word... ''Brainy''. Dream Girl lead the team
+        to the public service broadcaster where they found Brainy \"attacking the
+        problem\" as he put. It came down to Dream Girl having to choose either to
+        let the youth know what she saw and how little time they had left, or security
+        and comfort. She chose the former.<\/p><p style=\"\"> <\/p><h4>Relationship
+        with Brainiac 5<\/h4><p style=\"\">When the team returned to Legion headquarters,
+        Brainiac 5 explained to Dream Girl how all it would take was one person, one
+        casualty to have the willpower to break destiny; that the universe was more
+        unpredictable than they gave it credit for and her visions did not have to
+        be infallible. Dream Girl told him he would feel differently once they were
+        married.<\/p><p style=\"\"> <\/p><h4>Foreseeing Her Own Death<\/h4><p style=\"\">After
+        this the Legion''s true enemy was revealed: The terrorist group called <a
+        href=\"..\/..\/terra-firma\/65-47457\/\" rel=\"nofollow\">Terra Firma<\/a>,
+        lead by the super-powered <a href=\"..\/..\/elysion\/29-1274\/\" rel=\"nofollow\">Elysion<\/a>
+        and <a href=\"..\/..\/lemnos\/29-1268\/\" rel=\"nofollow\">Lemnos<\/a>. Terra
+        Firma attacked the planet Helegyn. During this attack Dream girl had a vision
+        but could not see past one hour; after that, all she saw was black. After
+        Elysion was captured, Dream Girl took out her frustrations on him. As she
+        did so, Dream Girl expressed faith, something unheard of for precogs. Brainiac
+        5 and Dream Girl had a romantic moment while he tried to figure out her problem.
+        Then Terra Firma made their move, just as Dream Girl had foreseen. They suicide-bombed
+        Legion Tower and the plaza where teens had gathered to support the Legion.
+        Brainiac 5 and Dream Girl headed there. Elysion escaped and, using his earth-controlling
+        powers, brought down Legion Tower on top of everyone around. Amid the chaos,
+        the answer to Dream Girl''s problem was answered... she could not see past
+        her own death. Dream Girl was crushed in the rubble of Legion Tower.<\/p><h4>Return
+        to Life<\/h4><p style=\"\">After she died, Brainiac 5 activated his force
+        field around her dug-out body, which was still in remarkably good condition
+        despite its physical death. Later it was revealed that Brainiac 5 had placed
+        Dream Girl''s body in stasis and was using a captured Lemnos try to bring
+        her back to life. At the end of the story arc, he was shown to be successful:
+        Nura''s consciousness was transferred into a newly cloned version of her original
+        body with her powers and sight fully restored. In the final issue of this
+        continuity, the happy pair announced to the rest of the team their plans to
+        get married.<\/p><p style=\"\"> <\/p><h3>Retroboot: New Earth<\/h3><h4>The
+        New 52<\/h4><p style=\"\">The efforts of DC to revitalize its titles led to
+        the New 52 reboot of the universe, in which all DC titles were relaunched
+        simultaneously. The Legion of Super Heroes reverted to a close analogue of
+        their original continuity prior to any of reboots, but it remains to be seen
+        the extent of any changes between the old series and new. Dream Girl and Star
+        Boy are once again an official couple, though she also appears to have a strong
+        relationship with <a href=\"\/brainiac-5\/4005-1255\/\" data-ref-id=\"4005-1255\">Brainiac
+        5<\/a>.<\/p><p style=\"\"> <\/p><h2>Powers &amp; Abilities<\/h2><h3>Precognition<\/h3><p
+        style=\"\">Dream Girl has the ability to see the future in dreams and visions.
+        This is a power shared by all natives of her home planet Naltor, but Nura''s
+        ability to do so is considered to be among the strongest of her race. In addition
+        to the long-range precognition of her dreams, Dream Girl also has the power
+        of short term precognition when in a conscious state, allowing her to see
+        a few seconds into the future at any given moment.<\/p><p style=\"\"><strong>Unarmed
+        Combat<\/strong><\/p><p style=\"\">Because of her passive power, Dream Girl''s
+        early portrayal was a damsel-in-distress who could be easily defeated and
+        captured by enemies, obliging her teammates to rescue her. She resolved to
+        change this and spent long hours with the Legion''s ultimate martial arts
+        master, Karate Kid, who gave her extensive training in hand-to-hand combat.
+        She quickly became one of his most gifted students, to the point where she
+        is now the second-most skilled martial artist on the team. Her fighting ability
+        is greatly enhanced by her power to see seconds into the future, which allows
+        her to predict her opponent''s moves even before they make them and map out
+        a battle before it actually begins. This makes her a very formidable tactician,
+        and she is able to successfully combat enemies physically far stronger than
+        her, such as the <a href=\"\/\">Persuader<\/a>.<\/p><h3>Intellect<\/h3><p
+        style=\"\">Nura also possesses a genius-level intellect, and has mastered
+        the highly advanced principles of Naltorian Science. She is one of the few
+        Legionnaires to have received a compliment from Brainiac 5 for intellectual
+        prowess. Because of her great intellect she was chosen for capture by the
+        villain Universo, since he regarded her as one of the Legion''s four biggest
+        threats to his domination of Earth (the others being <a href=\"\/saturn-girl\/4005-1273\/\"
+        data-ref-id=\"4005-1273\">Saturn Girl<\/a>, <a href=\"\/chameleon-boy\/4005-5945\/\"
+        data-ref-id=\"4005-5945\">Chameleon Boy<\/a>, and Brainiac 5).<\/p><p style=\"\">
+        <\/p><h3>Equipment<\/h3><p style=\"\">As a member of the Legion of Super-Heroes,
+        Dream Girl possesses a <a href=\"..\/..\/legion-flight-ring\/18-47353\/\"
+        rel=\"nofollow\">Legion Flight Ring<\/a>. The ring gives its wearer the ability
+        to fly, the speed and range of which is determined by the wearer''s willpower.
+        It also acts as a long-range communicator (enabling constant vocal contact
+        with other Legionnaires, even across vast distances of space), a signal device,
+        and a navigational compass, all powered by a micro-computer built inside the
+        ring. Dream Girl has also employed the ring in various ways unknown to other
+        Legionnaires. Using her great willpower, Nura has used the flight ring to
+        levitate and move other nearby objects as though she has telekinesis.<\/p><p
+        style=\"\"> <\/p><h2>Other Versions<\/h2><h3>Five Years Later: Batch SW6<\/h3><figure
+        data-ref-id=\"1300-1982222\" data-img-src=\"http:\/\/static.comicvine.com\/uploads\/original\/8\/83063\/1982222-dreamy01.jpg\"
+        data-size=\"small\" data-align=\"right\" style=\"width: 320px\" data-ratio=\"1.7405303030303\"
+        data-width=\"320\" data-resize-url=\"\" data-resized=\"\" data-embed-type=\"image\"><a
+        class=\"fluid-height\" style=\"padding-bottom:174.1%\" href=\"http:\/\/static.comicvine.com\/uploads\/original\/8\/83063\/1982222-dreamy01.jpg\"
+        data-ref-id=\"1300-1982222\"><img class=\"js-lazy-load-image\" data-src=\"http:\/\/static.comicvine.com\/uploads\/scale_small\/8\/83063\/1982222-dreamy01.jpg\"
+        src=\"data:image\/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==\"><noscript><img
+        src=\"http:\/\/static.comicvine.com\/uploads\/scale_small\/8\/83063\/1982222-dreamy01.jpg\"><\/noscript><\/a><figcaption>Dream
+        Girl (Batch SW6)<\/figcaption><\/figure><p style=\"\">The devastation of the
+        <a href=\"\/the-magic-wars\/4045-56080\/\" data-ref-id=\"4045-56080\">Magic
+        Wars<\/a> caused original Legion continuity to jump ahead five years in what
+        is now known as the Five Year Gap. Afterward, a duplicate teenage Legion team
+        mysteriously appeared, known as \"Batch SW6\" because they were believed to
+        be <a href=\"..\/..\/dominators\/65-56539\/\" rel=\"nofollow\">Dominator<\/a>-created
+        clones of the original team. They were later revealed to be time-paradox duplicates
+        of the original Legion, rather than clones. They operated separately from
+        the original Legion and formed their own team, the <a href=\"\/legionnaires\/4060-56923\/\"
+        data-ref-id=\"4060-56923\">Legionnaires<\/a>, and starred in their own series
+        with that title. All of the Legionnaires except for Cosmic Boy, Saturn Girl,
+        <a href=\"..\/..\/lightning-lad\/29-1253\/\" rel=\"nofollow\">Live Wire<\/a>
+        and Invisible Kid seemed to think that Dream Girl was part of the team the
+        entire time...but she wasn''t and her existence, which remained stable until
+        she joined with her adult counterpart and disappeared at the end of the universe,
+        was a blip in time caused by Zero Hour.<\/p><h3>Superboy''s Legion<\/h3><figure
+        data-align=\"right\" data-img-src=\"http:\/\/static.comicvine.com\/uploads\/original\/2\/29837\/2415132-dreamgirl_superboys_legion.jpg\"
+        data-ref-id=\"1300-2415132\" data-size=\"small\" style=\"width: 114px\" data-ratio=\"2\"
+        data-width=\"114\" data-resize-url=\"\" data-resized=\"\" data-embed-type=\"image\"><a
+        class=\"fluid-height\" style=\"padding-bottom:200.0%\" href=\"http:\/\/static.comicvine.com\/uploads\/original\/2\/29837\/2415132-dreamgirl_superboys_legion.jpg\"
+        data-ref-id=\"1300-2415132\"><img class=\"js-lazy-load-image\" data-src=\"http:\/\/static.comicvine.com\/uploads\/scale_small\/2\/29837\/2415132-dreamgirl_superboys_legion.jpg\"
+        src=\"data:image\/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==\"><noscript><img
+        src=\"http:\/\/static.comicvine.com\/uploads\/scale_small\/2\/29837\/2415132-dreamgirl_superboys_legion.jpg\"><\/noscript><\/a><figcaption>Dream
+        Girl (Superboy''s Legion)<\/figcaption><\/figure><p style=\"\">Dream Girl
+        appeared as a member of the Legion in <a href=\"\/superboys-legion\/4050-21245\/\"
+        data-ref-id=\"4050-21245\">Superboy''s Legion<\/a>, an <a href=\"\/elseworlds\/4015-46699\/\"
+        data-ref-id=\"4015-46699\">Elseworlds<\/a> story. She closely resembled the
+        original character in the classic silver one-piece costume, though she wore
+        her hair in a distinctly 1970''s \"Farrah Flip\" hairstyle.<\/p><h2>Other
+        Media<\/h2><h3>Television<\/h3><figure data-align=\"right\" data-img-src=\"http:\/\/static.comicvine.com\/uploads\/original\/2\/29837\/1570439-dreamgirl_anim_newkidsintown.jpg\"
+        data-ref-id=\"1300-1570439\" data-size=\"small\" style=\"width: 210px\" data-ratio=\"1.8952380952381\"
+        data-width=\"210\" data-resize-url=\"\" data-resized=\"\" data-embed-type=\"image\"><a
+        class=\"fluid-height\" style=\"padding-bottom:189.5%\" href=\"http:\/\/static.comicvine.com\/uploads\/original\/2\/29837\/1570439-dreamgirl_anim_newkidsintown.jpg\"
+        data-ref-id=\"1300-1570439\"><img class=\"js-lazy-load-image\" data-src=\"http:\/\/static.comicvine.com\/uploads\/scale_small\/2\/29837\/1570439-dreamgirl_anim_newkidsintown.jpg\"
+        src=\"data:image\/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==\"><noscript><img
+        src=\"http:\/\/static.comicvine.com\/uploads\/scale_small\/2\/29837\/1570439-dreamgirl_anim_newkidsintown.jpg\"><\/noscript><\/a><figcaption>Dream
+        Girl (Superman: The Animated Series)<\/figcaption><\/figure><p style=\"\"><b>Superman:
+        The Animated Series<\/b><\/p><p style=\"\">The first animated version of Dream
+        Girl appeared in the episode <i>New Kids in Town<\/i>, though it was only
+        a non-speaking cameo role. In this episode she wore a costume very similar
+        to her original bathing-suit costume from comic book continuity.<\/p><h4>Legion
+        of Super-Heroes Animated Series<\/h4><figure data-align=\"right\" data-img-src=\"http:\/\/static.comicvine.com\/uploads\/original\/2\/26503\/530830-dream_girl.jpg\"
+        data-ref-id=\"1300-530830\" data-size=\"small\" style=\"width: 320px\" data-ratio=\"1.179600886918\"
+        data-width=\"320\" data-resize-url=\"\" data-resized=\"\" data-embed-type=\"image\"><a
+        class=\"fluid-height\" style=\"padding-bottom:118.0%\" href=\"http:\/\/static.comicvine.com\/uploads\/original\/2\/26503\/530830-dream_girl.jpg\"
+        data-ref-id=\"1300-530830\"><img class=\"js-lazy-load-image\" data-src=\"http:\/\/static.comicvine.com\/uploads\/scale_small\/2\/26503\/530830-dream_girl.jpg\"
+        src=\"data:image\/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==\"><noscript><img
+        src=\"http:\/\/static.comicvine.com\/uploads\/scale_small\/2\/26503\/530830-dream_girl.jpg\"><\/noscript><\/a><figcaption>Dream
+        Girl (Legion of Super-Heroes Animated Series)<\/figcaption><\/figure><p style=\"\">Ten
+        years later, Dream Girl was a major character in the second season of the
+        <i>Legion of Super-Heroes<\/i> animated series, in the episode <i>In Your
+        Dreams<\/i>. She was voiced by actress Tara Platt. She had the trademark star-shaped
+        birthmark on her cheek and wore a costume similar to her classic silver one-piece
+        from comic book continuity. For the first time, she wore her long-time Legion
+        symbol (a \"thought balloon\" logo) on the chest of her costume.<\/p>","first_appeared_in_issue":{"api_detail_url":"http:\/\/beta.comicvine.com\/api\/first_appeared_in_issue\/4000-114753\/","id":114753,"name":"The
+        Menace of Dream Girl!","issue_number":"317"},"gender":2,"id":1254,"image":{"icon_url":"http:\/\/static.comicvine.com\/uploads\/square_avatar\/2\/29837\/2422799-dreamgirl_lsh_vol7_04.jpg","medium_url":"http:\/\/static.comicvine.com\/uploads\/scale_medium\/2\/29837\/2422799-dreamgirl_lsh_vol7_04.jpg","screen_url":"http:\/\/static.comicvine.com\/uploads\/screen_medium\/2\/29837\/2422799-dreamgirl_lsh_vol7_04.jpg","small_url":"http:\/\/static.comicvine.com\/uploads\/scale_small\/2\/29837\/2422799-dreamgirl_lsh_vol7_04.jpg","super_url":"http:\/\/static.comicvine.com\/uploads\/scale_large\/2\/29837\/2422799-dreamgirl_lsh_vol7_04.jpg","thumb_url":"http:\/\/static.comicvine.com\/uploads\/scale_avatar\/2\/29837\/2422799-dreamgirl_lsh_vol7_04.jpg","tiny_url":"http:\/\/static.comicvine.com\/uploads\/square_mini\/2\/29837\/2422799-dreamgirl_lsh_vol7_04.jpg"},"name":"Dream
+        Girl","origin":{"api_detail_url":"http:\/\/beta.comicvine.com\/api\/origin\/4030-3\/","id":3,"name":"Alien"},"publisher":{"api_detail_url":"http:\/\/beta.comicvine.com\/api\/publisher\/4010-10\/","id":10,"name":"DC
+        Comics"},"real_name":"Nura Nal","site_detail_url":"http:\/\/www.comicvine.com\/dream-girl\/4005-1254\/"}],"version":"1.0"}'
+    http_version: 
+  recorded_at: Sat, 18 Jul 2015 19:33:08 GMT
+recorded_with: VCR 2.9.3
