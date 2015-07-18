@@ -10,9 +10,9 @@ module Comicvine
 
     def self.find(id)
       custom_query = { filter: "id:#{id}" }
-      response = HTTParty.get(Comicvine::API::BASE_URL + URL, { query: Comicvine::API::QUERY.merge(custom_query) })
+      response = Comicvine::Utils.make_request(URL, custom_query)
       character = Comicvine::Utils.symbolize_keys(response["results"].first)
-      SingleCharacter.new(*character.values_at(*SingleCharacter.members))
+      Comicvine::Utils.create_structure(SingleCharacter, character)
     end
   end
 end
