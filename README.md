@@ -1,6 +1,7 @@
 # Comicvine
+[![Build Status](https://travis-ci.org/sazor/comicvine.svg?branch=master)](https://travis-ci.org/sazor/comicvine) [![Coverage Status](https://coveralls.io/repos/sazor/comicvine/badge.svg?branch=master&service=github)](https://coveralls.io/github/sazor/comicvine?branch=master)
 
-TODO: Write a gem description
+API Client for Comicvine library. Now it's in pre-pre-alpha stage.
 
 ## Installation
 
@@ -18,9 +19,12 @@ Or install it yourself as:
 
     $ gem install comicvine
 
+Set environment variable if you don't want to set api key in code:
+    $ export COMICVINE_API_KEY=YOUR_API_KEY
+
 ## Usage
 
-TODO: Write usage instructions here
+Soon.
 
 ## Contributing
 
