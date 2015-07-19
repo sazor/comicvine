@@ -12,6 +12,7 @@ module Comicvine
       HTTParty.get(url, { query: Comicvine::API::QUERY.merge(custom_query) })
     end
     def self.create_structure(structure, hash)
+      hash = symbolize_keys(hash)
       structure.new(*hash.values_at(*structure.members))
     end
   end

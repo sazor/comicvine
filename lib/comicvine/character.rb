@@ -14,12 +14,22 @@ module Comicvine
 
     DIFF_FIELDS = FIELDS - COMPACT_FIELDS
 
-    SingleCharacter  = Struct.new(*FIELDS)
-    CompactCharacter = Struct.new(*COMPACT_FIELDS)
+    SingleCharacter  = Struct.new(*FIELDS) do
+      def fields
+        members.reject { |m| self[m].nil? }
+      end
+    end
 
-    def self.fetch(compact)
-      response = Comicvine::Utils.make_request(compact[:api_detail_url])
-      character = Comicvine::Utils.symbolize_keys(response["results"])
+    CompactCharacter = Struct.new(*COMPACT_FIELDS) do
+      def fields
+        members.reject { |m| self[m].nil? }
+      end
+    end
+
+    def self.fetch(compact, fields = nil)
+      query = fields.join(",") if fields # field_list must be string with ',' delimiter
+      response = Comicvine::Utils.make_request(compact["api_detail_url"], field_list: query)
+      character = response["results"]
       Comicvine::Utils.create_structure(SingleCharacter, character)
     end
   end
