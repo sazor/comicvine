@@ -7,8 +7,9 @@ module Comicvine
       end
       result
     end
-    def self.make_request(url, custom_query)
-      HTTParty.get(Comicvine::API::BASE_URL + url, { query: Comicvine::API::QUERY.merge(custom_query) })
+    def self.make_request(url, custom_query = {})
+      url = Comicvine::API::BASE_URL + url unless url.include?(Comicvine::API::BASE_URL)
+      HTTParty.get(url, { query: Comicvine::API::QUERY.merge(custom_query) })
     end
     def self.create_structure(structure, hash)
       structure.new(*hash.values_at(*structure.members))
