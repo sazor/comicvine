@@ -1,6 +1,9 @@
 require "httparty"
 require "pry"
+require 'active_support'
+require 'active_support/core_ext/hash'
 require "comicvine/version"
+require "comicvine/paginated_array"
 require "comicvine/utils"
 require "comicvine/character"
 

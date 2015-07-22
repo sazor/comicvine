@@ -20,6 +20,7 @@ Or install it yourself as:
     $ gem install comicvine
 
 Set environment variable if you don't want to set api key in code:
+
     $ export COMICVINE_API_KEY=YOUR_API_KEY
 
 ## Usage

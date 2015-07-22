@@ -14,7 +14,7 @@ module Comicvine
 
     DIFF_FIELDS = FIELDS - COMPACT_FIELDS
 
-    SingleCharacter  = Struct.new(*FIELDS) do
+    SingleCharacter = Struct.new(*FIELDS) do
       def fields
         members.reject { |m| self[m].nil? }
       end
@@ -23,6 +23,15 @@ module Comicvine
     CompactCharacter = Struct.new(*COMPACT_FIELDS) do
       def fields
         members.reject { |m| self[m].nil? }
+      end
+    end
+
+    def self.find
+      query = {}
+      response = Comicvine::Utils.make_request(URL, query: query)
+      array = Comicvine::PaginatedArray.new(response["results"], response.except("results").symbolize_keys)
+      array.map do |char|
+        Comicvine::Utils.create_structure(CompactCharacter, char)
       end
     end
 

@@ -33,5 +33,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "vcr"
 
   spec.add_runtime_dependency "httparty" # just like party
-  spec.add_runtime_dependency "oj" # faster json processing
+  spec.add_runtime_dependency "activesupport"
 end

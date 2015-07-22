@@ -1,4 +1,21 @@
 describe Comicvine::Character, vcr: { record: :new_episodes } do
+  describe ".find" do
+    context "when want get all chars" do
+      let(:chars) { Comicvine::Character.find }
+      it "returns modified array" do
+        expect(chars).to respond_to(:limit, :offset, :page_results, :total_results)
+      end
+      it "sets number of page result properly" do
+        expect(chars.page_results).to eq(100)
+      end
+      it "returns 100 elements" do
+        expect(chars.size).to eq(100)
+      end
+      it "returns modified array of compact characters" do
+        expect(chars.first).to be_a(Comicvine::Character::CompactCharacter)
+      end
+    end
+  end
   describe ".fetch" do
     context "when want single detailed result" do
       let(:hash_constantine) do
