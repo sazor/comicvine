@@ -2,20 +2,62 @@ describe Comicvine::Character, vcr: { record: :new_episodes } do
   describe ".find" do
     context "when want get all chars" do
       let(:chars) { Comicvine::Character.find }
+
       it "returns modified array" do
         expect(chars).to respond_to(:limit, :offset, :page_results, :total_results)
       end
+
       it "sets number of page result properly" do
         expect(chars.page_results).to eq(100)
       end
+
       it "returns 100 elements" do
         expect(chars.size).to eq(100)
       end
+
       it "returns modified array of compact characters" do
         expect(chars.first).to be_a(Comicvine::Character::CompactCharacter)
       end
+
+      it "can change limit" do
+        chars = Comicvine::Character.find(limit: 55)
+        expect(chars.limit).to eq(55)
+      end
+
+      it "can change offset and limit" do
+        chars = Comicvine::Character.find(offset: 10, limit: 70)
+        expect(chars.offset).to eq(10)
+        expect(chars.limit).to eq(70)
+      end
+
+      it "can choose fields" do
+        fields = [:id, :name, :gender]
+        chars = Comicvine::Character.find(field_list: fields)
+        expect(chars.first.fields).to match_array(fields)
+      end
+    end
+
+    context "when want filter chars" do
+      let(:custom_filter) { { name: "Constantine", gender: "Male" } }
+      let(:chars) { Comicvine::Character.find(filter: custom_filter) }
+
+      it "returns filtred array" do
+        expect(chars.first.name).to eq("John Constantine")
+        expect(chars.first.gender).to eq(1)
+      end
+    end
+
+    context "when want sort chars" do
+      let(:custom_sort) { { id: :desc } }
+      let(:chars) { Comicvine::Character.find(sort: custom_sort) }
+
+      it "returns chars with descending ids" do
+        array_sorted = chars.each_cons(2).all? { |a, b| (a.id <=> b.id) >= 0 }
+        expect(array_sorted).to be true
+      end
     end
   end
+
   describe ".fetch" do
     context "when want single detailed result" do
       let(:hash_constantine) do

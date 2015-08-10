@@ -12,6 +12,8 @@ module Comicvine
                        :deck, :description, :first_appeared_in_issue, :gender, :id, :image,
                        :name, :origin, :publisher, :real_name, :site_detail_url ]
 
+    ACCEPTABLE_PARAMS = [:field_list, :limit, :offset, :sort, :filter]
+
     DIFF_FIELDS = FIELDS - COMPACT_FIELDS
 
     SingleCharacter = Struct.new(*FIELDS) do
@@ -26,9 +28,9 @@ module Comicvine
       end
     end
 
-    def self.find
-      query = {}
-      response = Comicvine::Utils.make_request(URL, query: query)
+    def self.find(params = {})
+      query = Comicvine::Utils.build_query(params, ACCEPTABLE_PARAMS)
+      response = Comicvine::Utils.make_request(URL, query)
       array = Comicvine::PaginatedArray.new(response["results"], response.except("results").symbolize_keys)
       array.map do |char|
         Comicvine::Utils.create_structure(CompactCharacter, char)
