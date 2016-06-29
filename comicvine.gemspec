@@ -33,7 +33,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "vcr"
 
   spec.add_runtime_dependency "dry-configurable"
-  spec.add_runtime_dependency "dry-initializer"
   spec.add_runtime_dependency "require_all"
   spec.add_runtime_dependency "dotenv"
 end
